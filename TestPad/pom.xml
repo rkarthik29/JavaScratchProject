@@ -1,0 +1,55 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.cloudera</groupId>
+  <artifactId>javatest</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <repositories>
+  <repository>
+     <releases>
+      <enabled>true</enabled>
+     </releases>
+     <snapshots>
+      <enabled>true</enabled>
+     </snapshots>
+     <id>hortonworks.extrepo</id>
+     <name>Hortonworks HDP</name>
+     <url>http://repo.hortonworks.com/content/repositories/releases</url>
+    </repository>
+ 
+    <repository>
+     <releases>
+      <enabled>true</enabled>
+     </releases>
+     <snapshots>
+      <enabled>true</enabled>
+     </snapshots>
+     <id>hortonworks.other</id>
+     <name>Hortonworks Other Dependencies</name>
+     <url>http://repo.hortonworks.com/content/groups/public</url>
+    </repository>
+    </repositories>
+  <dependencies>
+  <dependency>
+    <groupId>com.googlecode.json-simple</groupId>
+    <artifactId>json-simple</artifactId>
+    <version>1.1.1</version>
+</dependency>
+<!-- https://mvnrepository.com/artifact/org.apache.flink/flink-streaming-java -->
+<dependency>
+    <groupId>org.apache.flink</groupId>
+    <artifactId>flink-streaming-java_2.12</artifactId>
+    <version>1.8.1</version>
+    <scope>provided</scope>
+</dependency>
+<dependency>
+    <groupId>org.apache.flink</groupId>
+    <artifactId>flink-connector-kafka-base_2.12</artifactId>
+    <version>1.8.1</version>
+</dependency>
+<dependency>
+    <groupId>org.apache.hive</groupId>
+    <artifactId>hive-jdbc</artifactId>
+    <version>3.1.0.3.1.0.6-1</version>
+</dependency>
+  </dependencies>
+</project>
